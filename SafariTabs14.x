@@ -102,12 +102,14 @@ BOOL show_tab_bar_func_replaced(){
 #pragma mark ctor
 %ctor{
     
+    void* uses_tab_bar_func;
+    void* show_tab_bar_func;
+    
 #if __arm64e__
     
     HBLogDebug(@"arm64e");
-    void* uses_tab_bar_func = FIND_MS(uses_tab_bar_unique_ios14_0_arm64e, PACIBSP);
+    uses_tab_bar_func = FIND_MS(uses_tab_bar_unique_ios14_0_arm64e, PACIBSP);
     
-    void* show_tab_bar_func;
     if (@available(iOS 14.4.1, *)){
         show_tab_bar_func = FIND_MS(show_tab_bar_unique_ios14_4_1_arm64e, PACIBSP);
     }else if (@available(iOS 14.2.1, *)){
@@ -121,9 +123,8 @@ BOOL show_tab_bar_func_replaced(){
 #else
     
     HBLogDebug(@"arm64");
-    void* uses_tab_bar_func = FIND_MS(uses_tab_bar_unique_ios_14_0_arm64, 0xE9);
+    uses_tab_bar_func = FIND_MS(uses_tab_bar_unique_ios_14_0_arm64, 0xE9);
     
-    void* show_tab_bar_func;
     if (@available(iOS 14.4.1, *)){
         show_tab_bar_func = FIND_MS(show_tab_bar_unique_ios_14_4_1_arm64, 0xF6);
     }else{
