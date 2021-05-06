@@ -1,9 +1,9 @@
 # SafariTabs14
- Safari tabs for iOS 14 iPhone
+ Safari tabs for iPhone on iOS 14.x
  
  This tweak utilized offset finder 
 [libundirect](https://github.com/opa334/libundirect). The methods for finding the corresponding offsets for different binaries of Safari could be found in the
-[repo](https://github.com/opa334/libundirect). Also look at here
+[repo](https://github.com/opa334/libundirect). Also look
 [here for more details](https://gist.github.com/johnzaro/fdffd93c2ee0bc7db56d7959a67b4235).
 
 ## Credits
