@@ -1,8 +1,8 @@
 Package: com.udevs.safaritabs14
 Name: SafariTabs14
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
-Description: Safari tabs for iOS 14 iPhone
+Description: Safari tabs for iPhone on iOS 14.x
 Maintainer: udevs
 Author: udevs
 Section: Tweaks
